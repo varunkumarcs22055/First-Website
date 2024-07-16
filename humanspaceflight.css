@@ -1,0 +1,43 @@
+.moreabout h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    font-size: 30px;
+    font-family: 'Rubik Microbe', cursive;
+    
+}
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 1000px ;
+    justify-content: center;
+    align-items: center;
+}
+ .btn{
+    text-decoration: none;
+    list-style: none;
+}
+#home::before{
+    content: "";
+    background:url('img/spaceflight.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1250px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}  
+#home h1{
+    text-align: center;
+    color: rgb(22, 17, 17);
+    font-size: 2.5rem;
+}
+#home p{
+    font-size: 1.5rem;
+    color: rgb(17, 13, 13);
+    text-align: center;
+}

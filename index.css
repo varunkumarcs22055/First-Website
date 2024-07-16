@@ -1,0 +1,271 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar  */
+#navbar{
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    
+}
+#navbar li .active{
+    text-decoration: underline;
+    color: grey;
+}
+/* logo and images */
+#logo img {
+    margin: -5px 0px;
+    height: 100px;
+}
+/* list styling */
+#navbar{
+    position: relative;
+    align-items: center;
+    display: flex;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+background-color: black;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 11px ;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+
+/* home section  */
+.moreabout h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    font-size: 30px;
+    font-family: 'Rubik Microbe', cursive;
+    
+}
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 575px ;
+    justify-content: center;
+    align-items: center;
+}
+ .btn{
+    text-decoration: none;
+    list-style: none;
+}
+#home::before{
+    content: "";
+    background:url('img/home2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}  
+
+#home h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+#home p{
+    font-size: 1.5rem;
+    color: rgb(190, 169, 169);
+    text-align: center;
+}
+ /* serices section  */
+#about{
+    margin:3px ;
+display: flex;
+
+}
+#about .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 30px 20px;
+    border-radius: 23px;
+    background-color: rgb(224, 200, 200);
+}
+#about .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+    
+}
+#about .box p{
+    font-family: 'Pacifico', cursive;
+}
+#about{
+    margin:3px ;
+display: flex;
+}
+#about{
+    margin:3px ;
+display: flex;
+}
+#about{
+    margin:3px ;
+display: flex;
+
+}
+#about{
+    margin:3px ;
+display: flex;
+
+}
+/* client section */
+#client-section{
+height: 344px;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url(img/mars-g2ea744855_1920\ \(2\).jpg);
+z-index: -1;
+opacity: 0.4;
+width: 100%;
+height: 45%;
+}
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients img{
+    height: 130px;
+}
+#client-section .centre{
+    font-family: 'Nerko One', cursive;
+}
+.client-items{
+    padding: 34px ;
+}
+/* contact section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.7;
+background: url(img/spaceship-gd0604172f_1920.jpg) no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px ;
+}
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 34px;
+}
+#contact-box input ,
+#contact-box textarea{
+    width:100% ;
+    padding: 0.5rem ;
+}
+#contact-box form{
+width: 44%;
+}
+#contact-box label{
+font-size: 1.3rem;
+font-style: italic;
+font-family: 'Playfair Display', serif;
+}
+#contact .centre{
+    font-family: 'Nerko One', cursive;
+}
+.form-group input {
+    text-align: center;
+    padding: 1px 12px;
+    width: 200px;
+    margin: 12px 23px;
+    display: block;
+    border: 2px solid black;
+    font-size: 25px;
+    border-radius: 15px;
+}
+#submit{
+    background: url(img/space.jpg);
+    color: white;
+    border-color: rgb(37, 29, 29);
+    font-size: 20px;
+}
+#submit:hover{
+    color: black;
+}
+#textarea {
+
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'Pacifico', cursive;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Pacifico', cursive;
+}
+.btn {
+    padding: 2px 25px;
+    border: 2px solid #d9c2c2;
+    background-color: #2a1919;
+    color: white;
+    margin: 25px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.btn:hover{
+color: whitesmoke;
+background-color: black;
+}
+.centre{
+    text-align: center;
+}
